@@ -219,7 +219,9 @@ body {
     list-style: none;
     width: 100%;
     text-align: left;
-    /* margin-top: auto; <- INI YANG BIKIN JARAKNYA JAUH, UDAH DIHAPUS */
+    
+    /* INI KUNCINYA BRO: Mendorong sisa ruang ke bawah biar list sejajar di atas */
+    margin-bottom: auto; 
 }
 
 .subject-list li {
@@ -277,7 +279,7 @@ footer p {
 
 @media(max-width: 900px) {
     .categories {
-        grid-template-columns: repeat(2, 1fr); /* Layar tablet jadi 2 kolom */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -286,7 +288,7 @@ footer p {
         padding-top: 75px; 
     }
     .categories {
-        grid-template-columns: 1fr; /* Layar HP jadi 1 kolom */
+        grid-template-columns: 1fr; 
     }
     .btn-back {
         top: 15px;
@@ -329,7 +331,7 @@ footer p {
         <h1><span class="text-neon">KATEGORI LOMBA</span></h1>
 
         <p class="hero-desc">
-            DAFTAR BIDANG MATA PELAJARRAN YANG DILOMBAKAN SECARA NASIONAL PADA AMSO 2026
+            DAFTAR BIDANG MATA PELAJARAN YANG DILOMBAKAN SECARA NASIONAL PADA AMSO 2026
         </p>
     </div>
 </header>
@@ -350,7 +352,7 @@ footer p {
         <ul class="subject-list">
             <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
             <li><i class="fa-solid fa-flask"></i> ILMU PENGETAHUAN ALAM</li>
-            <li><i class="fa-solid fa-globe"></i> ILMU PENNGETAHUAN SOSIAL</li>
+            <li><i class="fa-solid fa-globe"></i> ILMU PENGETAHUAN SOSIAL</li>
         </ul>
     </div>
 
