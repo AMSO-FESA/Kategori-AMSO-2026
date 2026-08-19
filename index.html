@@ -202,9 +202,10 @@ nav a:hover, nav a.active {
 .hero-desc {
     margin: 12px auto 0; 
     color: var(--muted);
-    max-width: 650px;
-    font-size: 15px;
+    max-width: 1200px;
+    font-size: 15px; 
     text-align: center; 
+    white-space: nowrap;
 }
 
 /* =========================
@@ -345,6 +346,9 @@ footer p {
     .categories {
         grid-template-columns: 1fr; 
     }
+    .hero-desc {
+        white-space: normal; 
+    }
 }
 </style>
 </head>
@@ -358,7 +362,7 @@ footer p {
 <header class="hero">
     <div class="hero-inner">
         
-        <!-- 1. LOGO GROUP (Paling Atas) -->
+        <!-- 1. LOGO GROUP -->
         <div class="logo-group">
             <div class="logo-item">
                 <img src="https://raw.githubusercontent.com/AMSO-FESA/AMSO-2026/main/yasarini.png" alt="Logo Yasarini" title="Yayasan Ardhya Garini">
@@ -371,7 +375,7 @@ footer p {
             </div>
         </div>
 
-        <!-- 2. NAVBAR UTAMA (Di Bawah Logo, Di Atas Judul) -->
+        <!-- 2. NAVBAR UTAMA -->
         <nav>
             <a href="https://amso-fesa.github.io/AMSO-2026/"><i class="fa-solid fa-house"></i> Beranda</a>
             <a href="https://amso-fesa.github.io/Timeline-AMSO-2026/"><i class="fa-solid fa-calendar-days"></i> Timeline</a>
@@ -389,69 +393,51 @@ footer p {
             <a href="#"><i class="fa-solid fa-trophy"></i> Pengumuman</a>
         </nav>
 
-        <!-- 3. JUDUL UTAMA & DESKRIPSI (Paling Bawah di Header) -->
+        <!-- 3. JUDUL -->
         <h1><span class="text-neon">KATEGORI LOMBA</span></h1>
-
-        <p class="hero-desc">
-            DAFTAR BIDANG MATA PELAJARAN YANG DILOMBAKAN SECARA NASIONAL PADA AMSO 2026
-        </p>
+        <p class="hero-desc">DAFTAR BIDANG MATA PELAJARAN YANG DILOMBAKAN SECARA NASIONAL PADA AMSO 2026</p>
     </div>
 </header>
 
 
 <main class="container">
-
-<!-- =========================
-     CATEGORIES GRID
-========================= -->
-
-<section class="categories">
-    
-    <!-- CARD SD / MI -->
-    <div class="cat-card">
-        <i class="fa-solid fa-child-reaching cat-icon"></i>
-        <h3>TINGKAT SD / MI</h3>
-        <ul class="subject-list">
-            <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
-            <li><i class="fa-solid fa-flask"></i> ILMU PENGETAHUAN ALAM</li>
-            <li><i class="fa-solid fa-globe"></i> ILMU PENGETAHUAN SOSIAL</li>
-        </ul>
-    </div>
-
-    <!-- CARD SMP / MTs -->
-    <div class="cat-card">
-        <i class="fa-solid fa-book-open-reader cat-icon"></i>
-        <h3>TINGKAT SMP / MTs</h3>
-        <ul class="subject-list">
-            <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
-            <li><i class="fa-solid fa-flask"></i> ILMU PENGETAHUAN ALAM</li>
-            <li><i class="fa-solid fa-globe"></i> ILMU PENGETAHUAN SOSIAL</li>
-        </ul>
-    </div>
-
-    <!-- CARD SMA -->
-    <div class="cat-card">
-        <i class="fa-solid fa-graduation-cap cat-icon"></i>
-        <h3>TINGKAT SMA</h3>
-        <ul class="subject-list">
-            <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
-            <li><i class="fa-solid fa-atom"></i> FISIKA</li>
-            <li><i class="fa-solid fa-map-location-dot"></i> GEOGRAFI</li>
-            <li><i class="fa-solid fa-chart-line"></i> EKONOMI</li>
-            <li><i class="fa-solid fa-laptop-code"></i> TEKNOLOGI INFORMASI & KOMUNIKASI</li>
-        </ul>
-    </div>
-
-</section>
-
+    <section class="categories">
+        <div class="cat-card">
+            <i class="fa-solid fa-child-reaching cat-icon"></i>
+            <h3>TINGKAT SD / MI</h3>
+            <ul class="subject-list">
+                <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
+                <li><i class="fa-solid fa-flask"></i> ILMU PENGETAHUAN ALAM</li>
+                <li><i class="fa-solid fa-globe"></i> ILMU PENGETAHUAN SOSIAL</li>
+            </ul>
+        </div>
+        <div class="cat-card">
+            <i class="fa-solid fa-book-open-reader cat-icon"></i>
+            <h3>TINGKAT SMP / MTs</h3>
+            <ul class="subject-list">
+                <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
+                <li><i class="fa-solid fa-flask"></i> ILMU PENGETAHUAN ALAM</li>
+                <li><i class="fa-solid fa-globe"></i> ILMU PENGETAHUAN SOSIAL</li>
+            </ul>
+        </div>
+        <div class="cat-card">
+            <i class="fa-solid fa-graduation-cap cat-icon"></i>
+            <h3>TINGKAT SMA</h3>
+            <ul class="subject-list">
+                <li><i class="fa-solid fa-calculator"></i> MATEMATIKA</li>
+                <li><i class="fa-solid fa-atom"></i> FISIKA</li>
+                <li><i class="fa-solid fa-map-location-dot"></i> GEOGRAFI</li>
+                <li><i class="fa-solid fa-chart-line"></i> EKONOMI</li>
+                <li><i class="fa-solid fa-laptop-code"></i> TEKNOLOGI INFORMASI & KOMUNIKASI</li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 
 <footer>
     <strong>AMSO 2026</strong>
-    <p>
-        Angkasa Mathematic & Science Olympiad
-    </p>
+    <p>Angkasa Mathematic & Science Olympiad</p>
 </footer>
 
 </body>
